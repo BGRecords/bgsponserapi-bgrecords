@@ -1,4 +1,10 @@
+
+
+
 <head>
+<meta name="google-site-verification" content="yspR2CgKmcCI46s7EFLOZRwbdWlco1bFGBRf8Sfwb3o" />
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2989865048862981"
+     crossorigin="anonymous"></script>
     <script type="application/ld+json">
     {
       "@context":"https://schema.org/",
@@ -6,8 +12,8 @@
       "name":"BossGamer Records",
 	  "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
       "description":"BossGamer Records also known as BGR or BGRecords is an company that publishes media online and is also an records label and music distribution company and are also an game developer compompany..",
-      "url":"https://bgr.glitch.me/",
-      "website":"https://bgr.glitch.me/",
+      "url":"https://bg-records.com/",
+      "website":"https://bg-records.com/",
       "email": "artists.bossgamer@musician.org",
 		"image": [
   "https://cdn.glitch.global/6374d241-d518-4441-bcff-f2489ef8336d/BGRECORDS2.png"
@@ -24,11 +30,15 @@
          "BGP",
          "Boss_Gamer Publishing",
          "BG Publishing",
-         "bgr.glitch.me",
+         "bg-records.com",
          "Music Publishing",
          "Music Platform"
       ]
     }
+
+	    function doGet() {
+  return HtmlService.createHtmlOutputFromFile('Index');
+}
     </script>
   </head>
 <head><meta name="google-site-verification" content="FLaG3ZofRozGLnPkEJPVmvdDrHKpLTNboMeBx0hUjTE" /></head>
@@ -40,26 +50,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TVZNBT6');</script>
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://bgr.glitch.me/style.css">
+<link rel="stylesheet" href="https://bg-records.com/style.css">
 <title>Boss_GamerRECORDS</title>
 <meta name="title" content="Boss_GamerRecords - Home">
 <meta name="description" content="Distribute music or listen to podcasts or songs!">
 <div class="header">
   <img src="https://cdn.glitch.global/6374d241-d518-4441-bcff-f2489ef8336d/BGRECORDS2.png?v=1677955982282" alt="BGRecords Branding" height="80" width="120">
 </div>
-<h1>
-  This site is no longer supported nor up-to-date
+<h1 id="welcometext">
+  NOT FOUND
 </h1>
+<div style="display: none;" id="welcomebox">
+  
 <h2>
-  We require you to use <a href="https://bg-records.com">https://bg-records.com/</a> instead.
+  <button onclick="window.location.replace('https://bg-records.com/songs')">Listen to music</button><span style="font-size:15px;"><br></span>
 </h2>
 <h2>
-  <button onclick="window.location.replace('https://bg-records.com')">Click to visit our new site.</button><span style="font-size:15px;"><br></span>
+  <button onclick="window.location.replace('https://bg-records.com/artists')"> Distribute Music</a><span style="font-size:15px;"><br> Spotify & more</span>
 </h2>
+<h3>
+  <button onclick="window.location.replace('https://bg-records.com/app/android/')"> Android APP</a><span style="font-size:15px;"><br> Download our free android app!</span>
+</h3>
+</div>
 
-<footer>
-©® Boss_GamerRECORDS
-</footer>
+<style>
+.mobile-only {
+    display: none
+}
+</style>
+
+<style>
+@media screen and (max-width: 480px) {
+  .desktop-only{
+    display: none
+  }
+  .mobile-only{
+    display: block
+  }
+}
+</style>
 
 <style>
 .header{
@@ -94,3 +123,34 @@ button:hover{
   font-size: 14px;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+
+<script>
+   var type = window.location.hash.substr(1).replaceAll("%20", " ");
+  var parts = type.split("#");
+
+  var sponsor = parts[0];
+// Define the array of sponsors
+const sponsors = [
+  "liam",
+];
+
+// Input text to be checked
+
+
+// Initialize a variable to store the result
+let result = 0;
+
+// Check if the inputText matches any sponsor in the array
+if (sponsors.includes(sponsor)) {
+  document.getElementById('welcomebox').style.display = "block";
+  document.getElementById('welcometext').textContent = "You're supporting " + sponsor + " using this link!"
+  result = 1;
+}
+
+// Output the result
+console.log(result);
+
+</script>
